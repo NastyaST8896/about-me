@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 body {
     font-family: "Roboto", sans-serif;
+    color: #000;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.64;
@@ -85,4 +86,32 @@ body {
 .article-intro-inner__text {
     color: #727272;
     margin: 0;
+}
+
+/* ABOUT */
+
+.about {
+    background-color: #fff;
+}
+
+.about-inner {
+    padding: 120px 0 100px 0;
+}
+
+.about-inner__article {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article-about-inner__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 50px 0;
+}
+
+.article-about-inner__text {
+    color: #727272;
 }
