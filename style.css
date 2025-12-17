@@ -34,6 +34,28 @@ body {
     cursor: pointer;
 }
 
+p {
+    color: #727272;
+    margin: 0;
+}
+
+/* ARTICLE */
+
+.article {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 50px 0;
+}
+
+
 /* HEADER */
 
 .header-inner {
@@ -87,11 +109,6 @@ body {
     line-height: 1;
 }
 
-.article-intro-inner__text {
-    color: #727272;
-    margin: 0;
-}
-
 /* ABOUT */
 
 .about {
@@ -100,24 +117,6 @@ body {
 
 .about-inner {
     padding: 120px 0 100px 0;
-}
-
-.about-inner__article {
-    max-width: 540px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.article-about-inner__title {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1;
-    margin: 0 0 50px 0;
-}
-
-.article-about-inner__text {
-    color: #727272;
 }
 
 /* PROJECTS */
@@ -129,13 +128,14 @@ body {
 .projects-inner {
     padding: 100px 0;
     display: flex;
-    justify-content: space-between;
+    gap: 49px;
     align-items: center;
+    justify-content: center;
 }
 
 .projects-inner__item {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     align-items: center;
     max-width: 140px;
     width: 100%;
@@ -146,19 +146,17 @@ body {
     flex-direction: column;
     gap: 10px;
     color: #FFF;
-
 }
 
 .info-item-projects__number {
     margin: 0;
     font-size: 21px;
     line-height: 1;
-
 }
 
 .info-item-projects__text {
-    margin: 0;
     line-height: 0.94;
+    color: #FFF;
 }
 
 /* SKILLS */
@@ -168,10 +166,16 @@ body {
 }
 
 .skills-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 102px 0;
 }
 
 .skills-inner__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     max-width: 445px;
     width: 100%;
 }
@@ -183,11 +187,18 @@ body {
     line-height: 1;
 }
 
+.info-skills-inner__items {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
 .item-skills-inner__text {
-    color: #727272;
+    margin-bottom: 20px;
 }
 
 .item-skills-inner__line {
+    margin: 0;
     height: 4px;
     background-color: #C4C4C4;
     border: none;
@@ -202,4 +213,9 @@ body {
     background-color: #34547A;
     border: none;
     z-index: 5;
+}
+
+.skills-inner__img {
+    max-width: 555px;
+    width: 100%;
 }
