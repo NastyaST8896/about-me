@@ -418,23 +418,54 @@ p {
     }
 
     .collage-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: [one] 0.5fr [two] 0.5fr [three] 0.5fr [four] 0.5fr [five] 0.5fr [six] 0.5fr [seven];
+    }
+    .cell-collage-grid--order-1 {
+        order: 1;
+        grid-column-start: one;
+        grid-column-end: three;
+    }
+
+    .cell-collage-grid--order-2 {
+        order: 1;
+        grid-column-start: three;
+        grid-column-end: five;
+    }
+
+    .cell-collage-grid--order-3 {
+        order: 1;
+        grid-column-start: five;
+        grid-column-end: seven;
+    }
+
+    .cell-collage-grid--order-4 {
+        order: 1;
+        grid-column-start: one;
+        grid-column-end: three;
     }
 
     .cell-collage-grid--order-5 {
         order: 3;
+        grid-column-start: five;
+        grid-column-end: seven;
     }
 
     .cell-collage-grid--order-6 {
         order: 2;
+        grid-column-start: three;
+        grid-column-end: five;
     }
 
     .cell-collage-grid--order-7 {
         order: 5;
+        grid-column-start: four;
+        grid-column-end: six;
     }
 
     .cell-collage-grid--order-8 {
         order: 4;
+        grid-column-start: two;
+        grid-column-end: four;
     }
 }
 
@@ -472,28 +503,41 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .cell-collage-grid {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .cell-collage-grid--order-3 {
+        order: 1;
+    }
+
     .cell-collage-grid--order-3 {
         order: 2;
     }
 
-    .cell-collage-grid--order-4 {
-        order: 1;
-    }
-
-    .cell-collage-grid--order-5 {
+    .cell-collage-grid--order-3 {
         order: 4;
     }
 
-    .cell-collage-grid--order-6 {
+    .cell-collage-grid--order-4 {
         order: 3;
     }
 
-    .cell-collage-grid--order-7 {
+    .cell-collage-grid--order-5 {
+        order: 6;
+    }
+
+    .cell-collage-grid--order-6 {
         order: 5;
     }
 
+    .cell-collage-grid--order-7 {
+        order: 7;
+    }
+
     .cell-collage-grid--order-8 {
-        order: 6;
+        order: 8;
     }
 }
 
@@ -554,19 +598,19 @@ p {
     }
 
     .cell-collage-grid--order-3 {
-        order: 1;
+        order: 3;
     }
 
     .cell-collage-grid--order-4 {
-        order: 2;
+        order: 4;
     }
 
     .cell-collage-grid--order-7 {
-        order: 6;
+        order: 8;
     }
 
     .cell-collage-grid--order-8 {
-        order: 5;
+        order: 7;
     }
 
     .section-form-inner {
